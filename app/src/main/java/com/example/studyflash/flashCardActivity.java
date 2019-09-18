@@ -1,11 +1,14 @@
 package com.example.studyflash;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class flashCardActivity extends AppCompatActivity {
 
@@ -15,6 +18,8 @@ public class flashCardActivity extends AppCompatActivity {
     private View mCardFrontLayout;
     private View mCardBackLayout;
 
+    private Button homeButton1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +27,23 @@ public class flashCardActivity extends AppCompatActivity {
         findViews();
         loadAnimations();
         changeCameraDistance();
+
+        // Home Screen Button
+        homeButton1 = findViewById(R.id.homeButton1);
+        homeButton1.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                MainActivity();
+            }
+        });
+    }
+
+    public void MainActivity()
+    {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     private void changeCameraDistance(){
