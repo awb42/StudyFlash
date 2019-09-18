@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">studyFlash</string>
-    <string name="back">I\'m not sure :(</string>
-    <string name="front">Why is it that you love Jillian so much more than she loves you, but she pretends that she loves you more?</string>
+    <string name="back">Abraham Lincoln</string>
+    <string name="front">What president started the abolition of slavery in the United States?</string>
     <string name="question1">Question 1</string>
     <string name="flashCard">Flash Card</string>
     <string name="home">Home</string>
