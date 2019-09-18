@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">studyFlash</string>
-    <string name="back">Not a chance.</string>
-    <string name="front">Does Jillian love Anthony more?</string>
+    <string name="back">Hilton</string>
+    <string name="front">Where do you work?</string>
+    <string name="question1">Question 1</string>
 </resources>
